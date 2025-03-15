@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>Acción Popular &#8211; GIULIANA &#8211; BUSTAMANTE </title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="galeria/ico.jpg">
+</head>
+<body>
+
+  <body onload="playAudio()">
+
+    <audio id="myAudio" src="audio/hou.mp3" autoplay hidden></audio>
+    
+    <script>
+      function playAudio() {
+        const audio = document.getElementById('myAudio');
+        audio.play().catch(error => {
+          console.log('El navegador bloqueó la reproducción automática.');
+        });
+      }
+    </script>
+  
+  </body>
+
+<div id="layout">
+<div id="header">
+<div id="logo"></div>
+<div id="title"></div>
+</div>
+<div id="headercont">
+
+
+    <!-- Carousel Section -->
+    <div class="carousel" id="carousel">  <!-- ✅ Se agregó ID "carousel" -->
+      <div class="carousel-inner">
+        <img src="galeria/Congreso.png" class="carousel-item active">
+        <img src="galeria/Playa.png" class="carousel-item">
+        <img src="galeria/Mar.png" class="carousel-item">
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">❮</button>
+      <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <div class="contact-section">
+      <a href="#" class="btn">CONTÁCTANOS.</a>
+      <div class="iconos">
+
+        <a href="https://www.facebook.com/people/Giuliana-Bustamante/100070907040011/?sk=videos">
+          <img src="galeria/facebook.ico" alt="" width="35px">
+        </a>
+
+        <a href="https://wa.me/999999999?text=Hola una consulta srita Giuliana-Bustamante">
+          <img src="galeria/whasa.ico" alt="" width="35px">
+        </a>
+
+        <a href="https://x.com/twitter?lang=es">
+          <img src="galeria/twitter.ico" alt="" width="35px">
+        </a>
+
+        <a href="mailto:giuliana.bustamante2025@gmail.com?subject=Feedback&body=Message">
+          <img src="galeria/correo.ico" alt="" width="35px">
+        </a>
+
+        <a href="https://www.youtube.com/@Lucha-y-Transparencia" target="_blank">
+          <img src="galeria/youtube.ico" alt="YouTube" width="35px">
+        </a>
+
+        <a href="" target="_blank">
+          <img src="galeria/ico.jpg" alt="ico" width="35px">
+        </a>
+        
+      </div>
+    </div>
+    
+
+
+<div id="links">
+<div id="arrow"></div>
+<div class="linktxt"> <a href="#" class="linktxt">Home</a></div>
+<div id="arrowabout"></div>
+<div class="linktxt"><a href="#" class="linktxt">About Us</a></div>
+<div id="arrowservice"></div>
+<div class="linktxt"><a href="#" class="linktxt">Services</a></div>
+<div id="arrowprices"></div>
+<div class="linktxt"><a href="#" class="linktxt">Prices</a></div>
+<div id="arrowinformation"></div>
+<div class="linktxt"><a href="#" class="linktxt">Information</a></div>
+<div id="arrowcontact"></div>
+<div class="linktxt"><a href="#" class="linktxt">Contact Us</a></div>
+</div>
+
+<!-- Imagen en la franja negra -->
+<div class="black-bar">
+  <img class="image-inside-black-bar" src="galeria/cusco.jpg" alt="Imagen en la franja negra">
+</div>
+</div>
+
+<div id="container">
+<div id="left">
+<div id="ourlegal"></div>
+<div id="inleft">
+<div id="pic1"></div>
+<div class="text">Nam liber tempor cum soluta nobis eleifend option imperdiet do</div>
+</div>
+<div id="inright">
+<div class="text">Nam liber tempor cum soluta nobis eleifend option<span class="text1"> congue nihil imperdiet doming id quod mazim placerat facer.
+
+  </span><br />
+  <br />
+  <br />
+  Typi non habent claritatem insitam; est usus legentis<span class="text1"> in iis qui facit eorum claritatem. Investigationes. Aerunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</span></div>
+</div>
+</div>
+
+
+<div id="right">
+<div id="ourinformation"></div>
+<div id="inright1">
+<div class="text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugia.</div>
+<div id="pic2"></div>
+</div>
+</div>
+
+
+<div id="center">
+  
+  <div id="center1">
+   <div id="incenter">
+   <div class="text2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisait </div>
+   <div class="text">Duis autem vel eum iriure</div>
+   <div id="arrow1"></div>
+   <div class="blktxt">Nam liber tempor cum soluta nobis eleifend option congue</div>
+   <div id="arrow2"></div>
+   <div class="blktxt">Nam liber tempor cum soluta nobis eleifend option congue</div>
+   <div id="arrow3"></div>
+   <div class="blktxt">Nam liber tempor cum soluta nobis eleifend option congue</div></div>
+ </div>
+</div>
+
+</div>
+
+<div id="line"></div>
+<div class="foottxt">Copyright <span class="footertxt">&copy;</span> Lawyers Bureau. All Rights Rerserved.</div>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
