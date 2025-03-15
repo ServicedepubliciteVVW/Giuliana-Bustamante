@@ -122,17 +122,17 @@ margin:0 auto;
 	text-align: center;
 	margin-bottom: 20px;
 	margin-top: +10px; /* Ajusta esto para colocar el texto sobre la franja negra */
-	z-index: 10; /* Asegura que esté por encima */
-	left: -80px;
+	z-index: 500; /* Asegura que esté por encima */
+	left: -10px;
 }
   
 .contact-section .btn {
 	font-size: 29px;
 	color: #000000;
 	text-decoration: none;
-	margin-bottom: 10px;
+	margin-bottom: -20px;
 	display: block;
-	margin-left: -240px;
+	margin-left: -40px;
 	
 }
   
@@ -141,15 +141,8 @@ margin:0 auto;
 	
 }
   
-.contact-section .iconos png {
-	width: 44px;
-	height: auto;
-	left: +10%;
-
-}
-  
-.contact-section .iconos png {
-	width: 44px;
+.contact-section .iconos img {
+	width: 40px;
 	height: auto;
 	left: +10%;
 	
