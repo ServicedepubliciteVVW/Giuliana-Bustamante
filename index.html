@@ -32,10 +32,10 @@
 </head>
 <body>
 
-  <body onload="playAudio()">
+<body>
+    <button onclick="playAudio()">Reproducir sonido</button>
+    <audio id="myAudio" src="audio/hou.mp3"></audio>
 
-    <audio id="myAudio" src="audio/hou.mp3" autoplay hidden></audio>
-    
     <script>
       function playAudio() {
         const audio = document.getElementById('myAudio');
@@ -44,8 +44,8 @@
         });
       }
     </script>
-  
-  </body>
+</body>
+
 
 <div id="layout">
 <div id="header">
