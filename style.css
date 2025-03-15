@@ -141,7 +141,14 @@ margin:0 auto;
 	
 }
   
-.contact-section .iconos img {
+.contact-section .iconos png {
+	width: 44px;
+	height: auto;
+	left: +10%;
+
+}
+  
+.contact-section .iconos png {
 	width: 44px;
 	height: auto;
 	left: +10%;
