@@ -31,16 +31,29 @@
   
 </head>
 <body>
-
-<video autoplay muted loop playsinline style="display: none;">
-  <source src="video/silencioso.mp4" type="video/mp4">
-</video>
-
 <audio id="myAudio" autoplay>
   <source src="audio/hou.mp3" type="audio/mpeg">
-  <source src="audio/hou.ogg" type="audio/ogg">
   Tu navegador no soporta el audio.
 </audio>
+
+<button onclick="playAudio()">Reproducir Audio</button>
+
+<script>
+  function playAudio() {
+    const audio = document.getElementById('myAudio');
+    audio.play();
+  }
+
+  window.addEventListener('load', () => {
+    const audio = document.getElementById('myAudio');
+    audio.muted = true;
+    audio.play().then(() => {
+      audio.muted = false; 
+    }).catch(error => {
+      console.error('Error al reproducir audio:', error);
+    });
+  });
+</script>
   
 </body>
 
