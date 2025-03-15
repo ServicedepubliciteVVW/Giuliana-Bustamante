@@ -31,22 +31,12 @@
   
 </head>
 <body>
-<audio id="myAudio" autoplay>
+<audio id="myAudio" muted>
   <source src="audio/hou.mp3" type="audio/mpeg">
-  Tu navegador no soporta el audio.
 </audio>
-
-<button onclick="playAudio()">Reproducir Audio</button>
-
 <script>
-  function playAudio() {
-    const audio = document.getElementById('myAudio');
-    audio.play();
-  }
-
   window.addEventListener('load', () => {
     const audio = document.getElementById('myAudio');
-    audio.muted = true;
     audio.play().then(() => {
       audio.muted = false; 
     }).catch(error => {
