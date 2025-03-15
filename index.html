@@ -31,20 +31,22 @@
   
 </head>
 <body>
-<audio id="myAudio" muted>
-  <source src="hou.mp3" type="audio/mpeg">
-</audio>
-<script>
-  window.addEventListener('load', () => {
-    const audio = document.getElementById('myAudio');
-    audio.play().then(() => {
-      audio.muted = false; 
-    }).catch(error => {
-      console.error('Error al reproducir audio:', error);
+  <audio id="myAudio">
+    <source src="audio/hou.mp3" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <button id="playButton">Permitir Audio</button>
+
+  <script>
+    document.getElementById('playButton').addEventListener('click', () => {
+      alert('El audio se reproducirá ahora.');
+      const audio = document.getElementById('myAudio');
+      audio.play().catch(error => {
+        console.error('Error al reproducir el audio:', error);
+      });
     });
-  });
-</script>
-  
+  </script>
 </body>
 
 <div id="layout">
