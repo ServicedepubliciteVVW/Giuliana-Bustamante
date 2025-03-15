@@ -34,27 +34,20 @@
 
   <body onload="playAudio()">
 
-    <audio id="myAudio" src="audio/hou.mp3" autoplay hidden></audio>
-    <audio src="myAudio" src="audio/hou_2.ogg" autoplay hidden></audio>
-    <audio src="myAdio" src="audio/hou_3.wav" autoplay hidden></audio>
-    
-    <script>
-      function playAudio() {
-        const audio = document.getElementById('myAudio');
-        audio.play().catch(error => {
-          console.log('El navegador bloqueó la reproducción automática.');
-        });
-      } 
+   <audio id="myAudio" autoplay muted>
+  <source src="audio/hou.mp3" type="audio/mpeg">
+  <source src="audio/hou.ogg" type="audio/ogg">
+      <source src="audio/hou.wav" type="audio/ogg">
+  Tu navegador no soporta el audio.
+</audio>
 
-       // Forzar  un clic invisible
-       button.click();
-
-       // Reproducir el audio después de que el botòn haya sido "clickeado"
-       audio.play().catch(error => {
-          console.log('Reproducciòn bloqueada:', error);
-            });
-         });
-    </script>
+<script>
+  window.addEventListener('load', () => {
+    const audio = document.getElementById('myAudio');
+    audio.muted = false; // Le quitamos el muteo después de cargar
+    audio.play();
+  });
+</script>
   
   </body>
 
