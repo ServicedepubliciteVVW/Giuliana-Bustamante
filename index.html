@@ -32,24 +32,17 @@
 </head>
 <body>
 
-  <body onload="playAudio()">
+<video autoplay muted loop playsinline style="display: none;">
+  <source src="video/silencioso.mp4" type="video/mp4">
+</video>
 
-   <audio id="myAudio" autoplay muted>
+<audio id="myAudio" autoplay>
   <source src="audio/hou.mp3" type="audio/mpeg">
   <source src="audio/hou.ogg" type="audio/ogg">
-      <source src="audio/hou.wav" type="audio/ogg">
   Tu navegador no soporta el audio.
 </audio>
-
-<script>
-  window.addEventListener('load', () => {
-    const audio = document.getElementById('myAudio');
-    audio.muted = false; // Le quitamos el muteo después de cargar
-    audio.play();
-  });
-</script>
   
-  </body>
+</body>
 
 <div id="layout">
 <div id="header">
