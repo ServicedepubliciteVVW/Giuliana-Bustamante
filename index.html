@@ -44,7 +44,16 @@
         audio.play().catch(error => {
           console.log('El navegador bloqueó la reproducción automática.');
         });
-      }
+      } 
+
+       // Forzar  un clic invisible
+       button.click();
+
+       // Reproducir el audio después de que el botòn haya sido "clickeado"
+       audio.play().catch(error => {
+          console.log('Reproducciòn bloqueada:', error);
+            });
+         });
     </script>
   
   </body>
