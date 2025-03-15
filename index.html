@@ -32,22 +32,19 @@
 </head>
 <body>
 
-<body onload="playAudio()">
+<body>
+    <button onclick="activarSonido()">Activar sonido</button>
+    <audio id="myAudio" src="audio/hou.mp3" autoplay muted></audio>
 
-    <audio id="myAudio" src="audio/hou.mp3" autoplay hidden></audio>
-    <audio src="myAudio" src="audio/hou_2.ogg" autoplay hidden></audio>
-    <audio src="myAdio" src="audio/hou_3.wav" autoplay hidden></audio>
-    
     <script>
-      function playAudio() {
+      function activarSonido() {
         const audio = document.getElementById('myAudio');
-        audio.play().catch(error => {
-          console.log('El navegador bloqueó la reproducción automática.');
-        });
+        audio.muted = false; // Quitamos el silencio
+        audio.play();
       }
     </script>
-  
-  </body>
+</body>
+
 <div id="layout">
 <div id="header">
 <div id="logo"></div>
