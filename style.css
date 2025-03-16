@@ -41,7 +41,6 @@ margin:0 auto;
 	
 }
 
-<style>
     
     #playButton {
       position: absolute;
@@ -62,7 +61,6 @@ margin:0 auto;
     #playButton:hover {
       background-color: #ff2e00;
     }
-</style>
 
   
 
