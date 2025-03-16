@@ -120,9 +120,9 @@ margin:0 auto;
 	position: relative;
 	text-align: center;
 	margin-bottom: 20px;
-	margin-top: +10px; /* Ajusta esto para colocar el texto sobre la franja negra */
-	z-index: 500; /* Asegura que esté por encima */
-	left: 45px;
+	margin-top: +5px; /* Ajusta esto para colocar el texto sobre la franja negra */
+	z-index: 5000; /* Asegura que esté por encima */
+	left: 50px;
 }
   
 .contact-section .btn {
@@ -136,15 +136,14 @@ margin:0 auto;
 }
   
 .contact-section .iconos a {
-	margin: 0 8px;
+	margin: 0 10px;
 	
 }
   
 .contact-section .iconos img {
-	width: 60px;
+	width: 55px;
 	height: auto;
-	left: +10%; 
-	margin-top: -10px;
+	left: +10%;
 	
 }
   
@@ -304,7 +303,7 @@ margin-top: +400px;
 #incenter{
 width:212px;
 height:260px;
-margin-top: -160px;
+margin-top: -127px;
 background-color:#DFDED3;
 }
 
@@ -333,18 +332,17 @@ width:212px;
 height:300px;
 position:absolute;
 margin-left:352px;
-top:356px;
+top:326px;
 }
 
 #right{
 float:right;
 width:220px;
-height:00px;
+height:300px;
 background-color:#73828C;
 position:absolute;
 margin-left: 560px;
-margin-top: 0px;
-	
+
 }
 
 #inright1{
