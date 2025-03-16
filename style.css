@@ -18,6 +18,28 @@ margin:0 auto;
 background-color:#333333;
 }
 
+
+    #playButton {
+      position: absolute;
+      top: 400px;  /* Ajusta la posición vertical */
+      left: 1000px; /* Ajusta la posición horizontal */
+      width: 180px; /* Ancho del botón */
+      height: 46px; /* Alto del botón */
+      font-size: 18px;
+      background-color: #ff5733; /* Color llamativo */
+      color: white;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 9999; /* Asegura que esté por encima de todo */
+    }
+
+    #playButton:hover {
+      background-color: #ff2e00;
+    }
+
+
 #header{
 width:780px;
 height:110px;
