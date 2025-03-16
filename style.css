@@ -106,12 +106,12 @@ margin:0 auto;
 
 #links {
 	background-color: rgb(255, 255, 255); /* Si es una imagen, usa background-image */
-	width: 120%; /* Ocupa todo el ancho */
-	height: 360px; /* Ajusta la altura según el modelo */
+	width: 126%; /* Ocupa todo el ancho */
+	height: 446px; /* Ajusta la altura según el modelo */
     z-index: 5; /* Un valor más alto que la franja negra */
 	position: relative;
 	left: -100px;
-	top: -409px;
+	top: -447px;
 }
 
 .contact-section {
@@ -151,7 +151,7 @@ margin:0 auto;
 	width:142px;
     height:195px;
 	margin: 0 auto;
-	top: -610px;
+	top: -650px;
 	left: -80px;
 	z-index: 200;
     
